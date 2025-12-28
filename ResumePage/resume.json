@@ -1,0 +1,26 @@
+{
+    "experience": [
+        {
+            "title": "Coding Apprentice",
+            "employer": "Road to Hire",
+            "date": "Oct 2025 - Present",
+            "location": "Fort Mill, SC",
+            "description": [
+                "As an apprentice, I explored a new career field and was provided technical training, mentorship, and proffesional development.",
+                "I implemented a responsive navigation bar for a non-profit organization website by using CSS animation to enhance users experience."              
+            ]
+        },
+        {
+            "title": "Veterinary Technician",
+            "employer": "Faulkner Animal Hospital",
+            "date": "April 2025 - Sep. 2025",
+            "location": "Lancaster, SC",
+            "description": [
+                "As a Veterinary Technician, I assisted veterinarians in exams, surgeries and medical procedures.",
+                "I monitored anesthesia and vital signs during surgery and dental cleanings.",
+                "Collected and prepared blood, urine, and tissue samples for testing.",
+                "Educated pet owners on post-treatment care, medication instructions, and preventative health."
+            ]
+        }
+    ]
+}
