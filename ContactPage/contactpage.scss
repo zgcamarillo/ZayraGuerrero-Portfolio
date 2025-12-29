@@ -1,6 +1,12 @@
 //colors
 $background-color: #0b1220;
 $background-color-secondary: #020617;
+$background-white: #f8f8ff;
+$lavender: #C7B9FF;
+$cyan: #6ee7e0;
+$peach: #FFB7A5;
+$text-color: #F2F2F2;
+$subtext-color: #CFCFD4;
 //fonts
 @font-face {
     font-family: "myQuilge";
@@ -22,4 +28,109 @@ $background-color-secondary: #020617;
     font-family: "myMedifows";
     src: url(/fonts/mefidows/Mefidows\ DEMO\ VERSION.ttf) format("truetype");
     font-style: normal;
+}
+@font-face {
+    font-family: "goBold";
+    src: url(/fonts/gobold/Gobold\ Extra2.otf) format("opentype");
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+}
+.divider {
+    border-top: 1px $lavender solid;
+    margin: 50px 20px;
+}
+//main content
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h2 {
+    color: $text-color;
+    font-family: "myMedifows", sans-serif;
+    font-size: 45px;
+    font-style: italic;
+    margin-bottom: 0;
+}
+main p {
+    color: $subtext-color;
+    font-family: "myMedifows", sans-serif;
+    width: 60%;
+    text-align: center;
+}
+main img {
+    width: 100px;
+}
+//social
+.social-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $subtext-color;
+    margin: 20px;
+    border-radius: 10px;
+    padding-left: 20px
+}
+.social-card a {
+    text-decoration: none;
+}
+.social-card h2 {
+    color: $lavender;
+    font-family: "myMedifows", sans-serif;
+
+}
+.social-card h4 {
+    color: $text-color;
+    font-family: "goBold";
+}
+//contact form
+.contact-form-container {
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form-container label {
+    color: $text-color;
+    font-size: 27px;
+    align-self: flex-start;
+    font-family: "myMedifows", sans-serif;
+}
+.contact-form-container input,.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;  
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-family: "MyMedifows", sans-serif;
+    font-size: 18px;
+}
+.contact-form-container input [type="submit"] {
+    background-color: $cyan;
+    color: $background-color;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+//closing
+.closing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px;
+    text-align: center;
+}
+.closing h4 {
+    color: white;
+    font-family: "myMedifows", sans-serif;
 }

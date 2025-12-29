@@ -1,0 +1,22 @@
+{
+    "socials": [
+        {
+            "type": "Email",
+            "handle":"zayadiguecam@gmail.com",
+            "message":"Let's get in touch",
+            "link":"mailto:zayadiguecam@gmail.com"
+        },
+        {
+            "type": "LinkedIn",
+            "handle":"/in/zayraadileneguerrerocamarillo",
+            "message":"Proffessional Network",
+            "link":"https://www.linkedin.com/in/zayraadileneguerrerocamarillo/"
+        },
+        {
+            "type": "GitHub",
+            "handle":"@zgcamarillo",
+            "message":"Check out my code",
+            "link":"http://github.com/zgcamarillo"
+        }
+    ]
+}

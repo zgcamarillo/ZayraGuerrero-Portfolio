@@ -18,4 +18,118 @@
   font-family: "myMedifows";
   src: url(/fonts/mefidows/Mefidows\ DEMO\ VERSION.ttf) format("truetype");
   font-style: normal;
+}
+@font-face {
+  font-family: "goBold";
+  src: url(/fonts/gobold/Gobold\ Extra2.otf) format("opentype");
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b1220;
+}
+
+.divider {
+  border-top: 1px #C7B9FF solid;
+  margin: 50px 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2 {
+  color: #F2F2F2;
+  font-family: "myMedifows", sans-serif;
+  font-size: 45px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+main p {
+  color: #CFCFD4;
+  font-family: "myMedifows", sans-serif;
+  width: 60%;
+  text-align: center;
+}
+
+main img {
+  width: 100px;
+}
+
+.social-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #CFCFD4;
+  margin: 20px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.social-card a {
+  text-decoration: none;
+}
+
+.social-card h2 {
+  color: #C7B9FF;
+  font-family: "myMedifows", sans-serif;
+}
+
+.social-card h4 {
+  color: #F2F2F2;
+  font-family: "goBold";
+}
+
+.contact-form-container {
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form-container label {
+  color: #F2F2F2;
+  font-size: 27px;
+  align-self: flex-start;
+  font-family: "myMedifows", sans-serif;
+}
+
+.contact-form-container input, .contact-form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-family: "MyMedifows", sans-serif;
+  font-size: 18px;
+}
+
+.contact-form-container input [type=submit] {
+  background-color: #6ee7e0;
+  color: #0b1220;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 20px;
+  text-align: center;
+}
+
+.closing h4 {
+  color: white;
+  font-family: "myMedifows", sans-serif;
 }/*# sourceMappingURL=contactpage.css.map */
