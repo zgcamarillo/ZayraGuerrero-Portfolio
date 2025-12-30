@@ -83,6 +83,11 @@ main img {
   font-family: "goBold";
 }
 
+.social-card p {
+  color: #CFCFD4;
+  font-family: "myMedifows", sans-serif;
+}
+
 .contact-form-container {
   padding: 20px;
   border-radius: 10px;
@@ -92,6 +97,14 @@ main img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.contact-form-container h2.contact-form-title {
+  color: #F2F2F2;
+  font-family: "myMedifows", sans-serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .contact-form-container label {
