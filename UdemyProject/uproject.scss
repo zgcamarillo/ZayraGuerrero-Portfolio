@@ -6,11 +6,21 @@ $deep-navy: #0b132b;
 $background-white: #f8f8ff;
 $text-color: #F2F2F2;
 $subtext-color: #CFCFD4;
+$lavender: #C7B9FF;
 //fonts
 @font-face {
     font-family: "myMedifows";
     src: url(/fonts/mefidows/Mefidows\ DEMO\ VERSION.ttf) format("truetype");
     font-style: normal;
+}
+@font-face {
+    font-family: "myClamofte";
+    src: url("/fonts/clamofte/Clamofte\ DEMO\ VERSION.ttf") format("truetype");
+    font-style: normal;
+}
+body {
+    padding: 0;
+    margin: 0;
 }
 //nav bar 
 .navbar {
@@ -65,4 +75,77 @@ $subtext-color: #CFCFD4;
     color: $text-color;
     font-size: 22px;
     text-decoration: none;
+}
+//footer
+footer {
+    background-color: $deep-navy;
+    color: $text-color;
+    font-family: "myClamofte";
+    padding: 50px 20px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+.footer-about-summary,
+.footer-page-links,
+.social-media-logos {
+    margin: 0;
+    padding: 0;
+}
+.link-sections {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+}
+.social-media-logos li,
+.footer-page-links li {
+    list-style: none;
+}
+.social-media-logos li img {
+    filter: invert(82%) sepia(7%) saturate(0%) hue-rotate(279deg) brightness(100%) contrast(94%);
+    width: 75px;
+}
+.social-media-logos li a,
+.footer-page-links li a {
+    text-decoration: none;
+}
+.footer-page-links ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-page-links li a{
+   color: $lavender;
+   text-decoration: none;
+}
+@media (min-width: 600px) {
+
+}
+@media (min-width: 900px) {
+    .link-sections {
+        flex-direction: row-reverse;
+        gap: 200px;
+    }
+    .footer-page-links ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+@media (min-width: 1200px) {
+    .link-sections {
+        gap: 300px;
+    }
 }

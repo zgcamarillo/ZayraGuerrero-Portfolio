@@ -6,10 +6,16 @@ $deep-navy: #0b132b;
 $background-white: #f8f8ff;
 $text-color: #F2F2F2;
 $subtext-color: #CFCFD4;
+$lavender: #C7B9FF;
 //fonts
 @font-face {
     font-family: "myMedifows";
     src: url(/fonts/mefidows/Mefidows\ DEMO\ VERSION.ttf) format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: "myClamofte";
+    src: url("/fonts/clamofte/Clamofte\ DEMO\ VERSION.ttf") format("truetype");
     font-style: normal;
 }
 @keyframes fadeUp {
@@ -219,4 +225,106 @@ body {
     justify-content: space-between;
     gap: 20px;
     font-style: italic;
+}
+//footer
+footer {
+    background-color: $deep-navy;
+    color: $text-color;
+    font-family: "myClamofte";
+    padding: 50px 20px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+.footer-about-summary,
+.footer-page-links,
+.social-media-logos {
+    margin: 0;
+    padding: 0;
+}
+.link-sections {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+}
+.social-media-logos li,
+.footer-page-links li {
+    list-style: none;
+}
+.social-media-logos li img {
+    filter: invert(82%) sepia(7%) saturate(0%) hue-rotate(279deg) brightness(100%) contrast(94%);
+    width: 75px;
+}
+.social-media-logos li a,
+.footer-page-links li a {
+    text-decoration: none;
+}
+.footer-page-links ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-page-links li a{
+   color: $lavender;
+   text-decoration: none;
+}
+@media (min-width: 600px) {
+    .navbar h1 {
+        font-size: 30px;
+    }
+    #introduction h2 {
+        font-size: 36px;
+    }
+    #introduction p {
+        font-size: 20px;
+    }
+}
+@media (min-width: 900px) {
+    #introduction h2 {
+        font-size: 40px;
+    }
+    #introduction h3 {
+        font-size: 29px;
+    }
+    #introduction p {
+        font-size: 25px;
+    }
+    .social-logo {
+        width: 75px;
+    }
+    #project-button button {
+        font-size: 24px;
+    }
+    .link-sections {
+        flex-direction: row-reverse;
+        gap: 200px;
+    }
+    .footer-page-links ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+@media (min-width: 1200px) {
+    #work-experience-grid {
+        gap: 30px;
+    }
+    .work-experience-card {
+        margin: 40px;
+    }
+    .link-sections {
+        gap: 300px;
+    }
 }

@@ -267,25 +267,66 @@ body {
   font-size: 25px;
 }
 
-.social-media-container {
-  height: auto;
-  background-color: #f8f8ff;
+footer {
+  background-color: #0b132b;
+  color: #F2F2F2;
+  font-family: "myClamofte";
+  padding: 50px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-about-summary,
+.footer-page-links,
+.social-media-logos {
+  margin: 0;
+  padding: 0;
+}
+
+.link-sections {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .social-media-logos {
   display: flex;
   flex-direction: row;
-  list-style: none;
-  justify-content: space-around;
-  align-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-.logo-img {
-  height: 20px;
+.social-media-logos li,
+.footer-page-links li {
+  list-style: none;
+}
+
+.social-media-logos li img {
+  filter: invert(82%) sepia(7%) saturate(0%) hue-rotate(279deg) brightness(100%) contrast(94%);
+  width: 75px;
+}
+
+.social-media-logos li a,
+.footer-page-links li a {
+  text-decoration: none;
+}
+
+.footer-page-links ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-page-links li a {
+  color: #C7B9FF;
+  text-decoration: none;
 }
 
 @media (min-width: 600px) {
@@ -317,6 +358,14 @@ body {
   .subheading-wrapper h3 {
     font-size: 70px;
   }
+  .link-sections {
+    flex-direction: row-reverse;
+    gap: 200px;
+  }
+  .footer-page-links ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (min-width: 1200px) {
   #main-section {
@@ -329,16 +378,15 @@ body {
     width: 200px;
     height: auto;
   }
-  #about-me {
+  #about-me,
+  #biography {
     margin: auto 90px;
   }
   #about-me-header,
   #biography h2 {
     margin: 50px;
-    font-size: 70px;
   }
-  #about-me-summary,
-  #my-biography-summary {
-    font-size: 40px;
+  .link-sections {
+    gap: 300px;
   }
 }/*# sourceMappingURL=landing.css.map */

@@ -185,3 +185,123 @@ main img {
 .closing h4 {
     color: white;
 }
+//footer
+footer {
+    background-color: $deep-navy;
+    color: $text-color;
+    font-family: "myClamofte";
+    padding: 50px 20px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+.footer-about-summary,
+.footer-page-links,
+.social-media-logos {
+    margin: 0;
+    padding: 0;
+}
+.link-sections {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+}
+.social-media-logos li,
+.footer-page-links li {
+    list-style: none;
+}
+.social-media-logos li img {
+    filter: invert(82%) sepia(7%) saturate(0%) hue-rotate(279deg) brightness(100%) contrast(94%);
+    width: 75px;
+}
+.social-media-logos li a,
+.footer-page-links li a {
+    text-decoration: none;
+}
+.footer-page-links ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-page-links li a{
+   color: $lavender;
+   text-decoration: none;
+}
+@media (min-width: 600px) {
+    .navbar h1 {
+        font-size: 30px;
+    }
+    main h2 {
+        font-size: 55px;
+    }
+    main p {
+        font-size: 20px;
+    }
+    #socials-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-card {
+        max-width: 750px;
+        width: 100%;
+    }
+    .social-card h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .social-card h4 {
+        margin: 0;
+        font-size: 28px;
+    }
+    .social-card p{
+        font-size: 20px;
+    }
+    .contact-form-container {
+        max-width: 500px;
+    }
+    .contact-form-container .contact-form-title {
+        font-size: 50px;
+    }
+}
+@media (min-width: 900px) {
+    main p {
+        font-size: 32px;
+    }
+    .link-sections {
+        flex-direction: row-reverse;
+        gap: 200px;
+    }
+    .footer-page-links ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+@media (min-width: 1200px) {
+    #socials-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-card {
+        width: 450px;
+    }
+    .link-sections {
+        gap: 300px;
+    }
+}

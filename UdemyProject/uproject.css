@@ -3,6 +3,16 @@
   src: url(/fonts/mefidows/Mefidows\ DEMO\ VERSION.ttf) format("truetype");
   font-style: normal;
 }
+@font-face {
+  font-family: "myClamofte";
+  src: url("/fonts/clamofte/Clamofte DEMO VERSION.ttf") format("truetype");
+  font-style: normal;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .navbar {
   position: relative;
   top: 0;
@@ -60,4 +70,82 @@
   color: #F2F2F2;
   font-size: 22px;
   text-decoration: none;
+}
+
+footer {
+  background-color: #0b132b;
+  color: #F2F2F2;
+  font-family: "myClamofte";
+  padding: 50px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-about-summary,
+.footer-page-links,
+.social-media-logos {
+  margin: 0;
+  padding: 0;
+}
+
+.link-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.social-media-logos li,
+.footer-page-links li {
+  list-style: none;
+}
+
+.social-media-logos li img {
+  filter: invert(82%) sepia(7%) saturate(0%) hue-rotate(279deg) brightness(100%) contrast(94%);
+  width: 75px;
+}
+
+.social-media-logos li a,
+.footer-page-links li a {
+  text-decoration: none;
+}
+
+.footer-page-links ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-page-links li a {
+  color: #C7B9FF;
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  .link-sections {
+    flex-direction: row-reverse;
+    gap: 200px;
+  }
+  .footer-page-links ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .link-sections {
+    gap: 300px;
+  }
 }/*# sourceMappingURL=uproject.css.map */

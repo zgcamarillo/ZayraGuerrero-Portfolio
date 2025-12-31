@@ -2,6 +2,7 @@ $background-color: #0b1220;
 $text-color: #F2F2F2;
 $subtext-color: #CFCFD4;
 $deep-navy: #0b132b;
+$lavender: #C7B9FF;
 
 //fonts 
 @font-face {
@@ -9,7 +10,11 @@ $deep-navy: #0b132b;
     src: url(/fonts/mefidows/Mefidows\ DEMO\ VERSION.ttf) format("truetype");
     font-style: normal;
 }
-
+@font-face {
+    font-family: "myClamofte";
+    src: url("/fonts/clamofte/Clamofte\ DEMO\ VERSION.ttf") format("truetype");
+    font-style: normal;
+}
 body {
     background-color: $background-color;
     color: $text-color;
@@ -128,6 +133,60 @@ body {
     margin: 0;
     color: $subtext-color;
 }
+//footer
+footer {
+    background-color: $deep-navy;
+    color: $text-color;
+    font-family: "myClamofte";
+    padding: 50px 20px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+.footer-about-summary,
+.footer-page-links,
+.social-media-logos {
+    margin: 0;
+    padding: 0;
+}
+.link-sections {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+}
+.social-media-logos li,
+.footer-page-links li {
+    list-style: none;
+}
+.social-media-logos li img {
+    filter: invert(82%) sepia(7%) saturate(0%) hue-rotate(279deg) brightness(100%) contrast(94%);
+    width: 75px;
+}
+.social-media-logos li a,
+.footer-page-links li a {
+    text-decoration: none;
+}
+.footer-page-links ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-page-links li a{
+   color: $lavender;
+   text-decoration: none;
+}
 @media (min-width: 600px) {
     .navbar h1 {
         font-size: 30px;
@@ -152,6 +211,20 @@ body {
     .project-card:first-child {
         border-right: 1px solid $text-color;
         padding-right: 25px;
+    }
+    .link-sections {
+        flex-direction: row-reverse;
+        gap: 200px;
+    }
+    .footer-page-links ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+@media (min-width: 1200px) {
+    .link-sections {
+        gap: 300px;
     }
 }
 @media (min-width: 1400px) {

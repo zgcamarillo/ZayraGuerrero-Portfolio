@@ -4,10 +4,16 @@ $blush-pink: #f2b6c6;
 $text-color: #F2F2F2;
 $subtext-color: #CFCFD4;
 $deep-navy: #0b132b;
+$lavender: #C7B9FF;
 //fonts
 @font-face {
     font-family: "myMedifows";
     src: url(/fonts/mefidows/Mefidows\ DEMO\ VERSION.ttf) format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: "myClamofte";
+    src: url("/fonts/clamofte/Clamofte\ DEMO\ VERSION.ttf") format("truetype");
     font-style: normal;
 }
 
@@ -142,6 +148,60 @@ article p {
     font-size: 20px;
     color: $subtext-color;
 }
+//footer
+footer {
+    background-color: $deep-navy;
+    color: $text-color;
+    font-family: "myClamofte";
+    padding: 50px 20px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+.footer-about-summary,
+.footer-page-links,
+.social-media-logos {
+    margin: 0;
+    padding: 0;
+}
+.link-sections {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+}
+.social-media-logos li,
+.footer-page-links li {
+    list-style: none;
+}
+.social-media-logos li img {
+    filter: invert(82%) sepia(7%) saturate(0%) hue-rotate(279deg) brightness(100%) contrast(94%);
+    width: 75px;
+}
+.social-media-logos li a,
+.footer-page-links li a {
+    text-decoration: none;
+}
+.footer-page-links ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-page-links li a{
+   color: $lavender;
+   text-decoration: none;
+}
 @media (min-width: 600px) {
     .navbar h1 {
         font-size: 30px;
@@ -170,24 +230,39 @@ article p {
         width: 200px;
         height: auto;
     }
+    .link-sections {
+        flex-direction: row-reverse;
+        gap: 200px;
+    }
+    .footer-page-links ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
 }
 @media (min-width: 1200px) {
     .summary-wrapper {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: stretch;
+        gap: 60px;
 
     }
     article {
         max-width: 400px;
+        margin: 0;
         border-bottom: none;
         border-right: 1px solid $blush-pink;
-        padding: 10px 20px;
-        margin: 0 auto;
+        padding: 10px 40px 10px 10px;
+        box-sizing: border-box;
     }
     article:last-child {
         border-right: none;
     }
     article h2 {
         margin-top: auto;
+    }
+    .link-sections {
+        gap: 300px;
     }
 }

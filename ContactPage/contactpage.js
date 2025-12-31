@@ -21,3 +21,23 @@ fetch("contactpage.json")
         }
         )
     })
+const form = document.querySelector(".contact-form-container");
+const fName = document.querySelector("#fname");
+const lName = document.querySelector("#lname");
+const email = document.querySelector("#email");
+const pNumber = document.querySelector("#phonenumber");
+
+form.addEventListener("submit", function(e) {
+    let errors = [];
+
+    if (fName.value.trim()==="") errors.push("First Name is required.");
+    if (lName.value.trim()==="") errors.push("Last Name is required.");
+    if (email.value.trim()==="") errors.push("Email is required.");
+    if (pNumber.value.trim()==="") errors.push("Phone Number is required.");
+    if (errors.length > 0) {
+        e.preventDefault(); 
+        alert(errors.join("\n"));
+    } else {
+        alert("Form submitted successfully!");
+    }
+})
