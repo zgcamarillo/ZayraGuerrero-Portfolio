@@ -36,19 +36,21 @@ type();
 listItems.forEach(li => {
     li.dataset.text = li.textContent;
     li.textContent = "";
+    li.style.opacity = 1;
 });
+
 function typeSkills() {
-    if (itemIndex >= listItems.length) return;
+    if (itemIndex >= listItems.length) return; // stop at last skill
+
     const currentItem = listItems[itemIndex];
     const fullText = currentItem.dataset.text;
-
-    currentItem.style.opacity = 1;
 
     if (charIndex < fullText.length) {
         currentItem.textContent += fullText.charAt(charIndex);
         charIndex++;
-        setTimeout(typeSkills, 70); 
+        setTimeout(typeSkills, 70);
     } else {
+        // move to next skill
         charIndex = 0;
         itemIndex++;
         setTimeout(typeSkills, 300);
