@@ -5,11 +5,6 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: "myBestSwatch";
-  src: url("/fonts/best_swashed/BestSwashed_PERSONAL_USE_ONLY.otf") format("opentype");
-  font-style: normal;
-}
-@font-face {
   font-family: "myClamofte";
   src: url("/fonts/clamofte/Clamofte DEMO VERSION.ttf") format("truetype");
   font-style: normal;
@@ -28,6 +23,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #0b1220;
+  font-family: "myMedifows", sans-serif;
 }
 
 .divider {
@@ -43,7 +39,6 @@ main {
 
 main h2 {
   color: #F2F2F2;
-  font-family: "myMedifows", sans-serif;
   font-size: 45px;
   font-style: italic;
   margin-bottom: 0;
@@ -51,7 +46,6 @@ main h2 {
 
 main p {
   color: #CFCFD4;
-  font-family: "myMedifows", sans-serif;
   width: 60%;
   text-align: center;
 }
@@ -75,7 +69,6 @@ main img {
 
 .social-card h2 {
   color: #C7B9FF;
-  font-family: "myMedifows", sans-serif;
 }
 
 .social-card h4 {
@@ -85,7 +78,6 @@ main img {
 
 .social-card p {
   color: #CFCFD4;
-  font-family: "myMedifows", sans-serif;
 }
 
 .contact-form-container {
@@ -101,7 +93,6 @@ main img {
 
 .contact-form-container h2.contact-form-title {
   color: #F2F2F2;
-  font-family: "myMedifows", sans-serif;
   font-size: 36px;
   margin-bottom: 40px;
   text-align: center;
@@ -111,7 +102,6 @@ main img {
   color: #F2F2F2;
   font-size: 27px;
   align-self: flex-start;
-  font-family: "myMedifows", sans-serif;
 }
 
 .contact-form-container input, .contact-form-container textarea {
@@ -120,11 +110,10 @@ main img {
   margin: 10px 0;
   border: none;
   border-radius: 5px;
-  font-family: "MyMedifows", sans-serif;
   font-size: 18px;
 }
 
-.contact-form-container input [type=submit] {
+.contact-form-container input[type=submit] {
   background-color: #6ee7e0;
   color: #0b1220;
   font-size: 20px;
@@ -144,5 +133,4 @@ main img {
 
 .closing h4 {
   color: white;
-  font-family: "myMedifows", sans-serif;
 }/*# sourceMappingURL=contactpage.css.map */

@@ -1,38 +1,15 @@
 //colors
 $background-color: #0b1220;
-$background-color-secondary: #020617;
-$light-lavender: #e6e6f0;
 $blush-pink: #f2b6c6;
-$background-white: #f8f8ff;
 $text-color: #F2F2F2;
 $subtext-color: #CFCFD4;
 //fonts
-@font-face {
-    font-family: "myQuilge";
-    src: url("/fonts/quilge/Quilge\ DEMO\ VERSION.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 400;
-}
-@font-face {
-    font-family: "myBestSwatch";
-    src: url("/fonts/best_swashed/BestSwashed_PERSONAL_USE_ONLY.otf") format("opentype");
-    font-style: normal;
-}
-@font-face {
-    font-family: "myClamofte";
-    src: url("/fonts/clamofte/Clamofte\ DEMO\ VERSION.ttf") format("truetype");
-    font-style: normal;
-}
 @font-face {
     font-family: "myMedifows";
     src: url(/fonts/mefidows/Mefidows\ DEMO\ VERSION.ttf) format("truetype");
     font-style: normal;
 }
-@font-face {
-    font-family: "goBold";
-    src: url(/fonts/gobold/Gobold\ Extra2.otf) format("opentype");
-    font-style: normal;
-}
+
 body {
     margin: 0;
     padding: 0;

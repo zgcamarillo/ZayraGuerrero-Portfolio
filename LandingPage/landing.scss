@@ -1,10 +1,8 @@
 //colors
 $background-color: #0b1220;
-$background-color-secondary: #020617;
 $background-white: #f8f8ff;
 $lavender: #C7B9FF;
 $cyan: #6ee7e0;
-$peach: #FFB7A5;
 $text-color: #F2F2F2;
 $subtext-color: #CFCFD4;
 //fonts
@@ -14,11 +12,6 @@ $subtext-color: #CFCFD4;
     src: url("/fonts/quilge/Quilge\ DEMO\ VERSION.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
-}
-@font-face {
-    font-family: "myBestSwatch";
-    src: url("/fonts/best_swashed/BestSwashed_PERSONAL_USE_ONLY.otf") format("opentype");
-    font-style: normal;
 }
 @font-face {
     font-family: "myClamofte";
@@ -46,33 +39,6 @@ body {
     margin: 50px 20px;
 }
 //nav bar 
-.navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    z-index: 5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: $text-color;
-    padding: 0 20px;
-}
-.logo {
-    font-family: "myMedifows", sans-serif;
-    font-size: 20px;
-}
-.nav-menu {
-    display: none;
-    flex-direction: column;
-    list-style: none;
-    
-}
-.nav-div {
-    border-top: 1px $subtext-color solid;
-    margin: 50px 20px;
-}
 
 //hero section 
 #main-section {
@@ -80,7 +46,7 @@ body {
     height: 100svh;
     width: 100%;
     overflow: hidden;
-    border-radius: 30px;;
+    border-radius: 30px;
 }
 #hero-video {
     position: absolute;
@@ -99,7 +65,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     align-items: center;
     text-align: center;
     color: $text-color;
@@ -131,7 +96,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;;
+    position: relative;
     top: -57px;
 }
 .rotator img {
@@ -250,5 +215,4 @@ body {
 
 .logo-img {
     height: 20px;
-    justify-content: space-between;
 }

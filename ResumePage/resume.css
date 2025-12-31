@@ -1,27 +1,6 @@
 @font-face {
-  font-family: "myQuilge";
-  src: url("/fonts/quilge/Quilge DEMO VERSION.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "myBestSwatch";
-  src: url("/fonts/best_swashed/BestSwashed_PERSONAL_USE_ONLY.otf") format("opentype");
-  font-style: normal;
-}
-@font-face {
-  font-family: "myClamofte";
-  src: url("/fonts/clamofte/Clamofte DEMO VERSION.ttf") format("truetype");
-  font-style: normal;
-}
-@font-face {
   font-family: "myMedifows";
   src: url(/fonts/mefidows/Mefidows\ DEMO\ VERSION.ttf) format("truetype");
-  font-style: normal;
-}
-@font-face {
-  font-family: "goBold";
-  src: url(/fonts/gobold/Gobold\ Extra2.otf) format("opentype");
   font-style: normal;
 }
 @keyframes fadeUp {

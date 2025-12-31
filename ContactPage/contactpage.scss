@@ -1,10 +1,7 @@
 //colors
 $background-color: #0b1220;
-$background-color-secondary: #020617;
-$background-white: #f8f8ff;
 $lavender: #C7B9FF;
 $cyan: #6ee7e0;
-$peach: #FFB7A5;
 $text-color: #F2F2F2;
 $subtext-color: #CFCFD4;
 //fonts
@@ -13,11 +10,6 @@ $subtext-color: #CFCFD4;
     src: url("/fonts/quilge/Quilge\ DEMO\ VERSION.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
-}
-@font-face {
-    font-family: "myBestSwatch";
-    src: url("/fonts/best_swashed/BestSwashed_PERSONAL_USE_ONLY.otf") format("opentype");
-    font-style: normal;
 }
 @font-face {
     font-family: "myClamofte";
@@ -39,6 +31,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: $background-color;
+    font-family: "myMedifows", sans-serif;
 }
 .divider {
     border-top: 1px $lavender solid;
@@ -52,14 +45,12 @@ main {
 }
 main h2 {
     color: $text-color;
-    font-family: "myMedifows", sans-serif;
     font-size: 45px;
     font-style: italic;
     margin-bottom: 0;
 }
 main p {
     color: $subtext-color;
-    font-family: "myMedifows", sans-serif;
     width: 60%;
     text-align: center;
 }
@@ -73,15 +64,13 @@ main img {
     border: 1px solid $subtext-color;
     margin: 20px;
     border-radius: 10px;
-    padding-left: 20px
+    padding-left: 20px;
 }
 .social-card a {
     text-decoration: none;
 }
 .social-card h2 {
     color: $lavender;
-    font-family: "myMedifows", sans-serif;
-
 }
 .social-card h4 {
     color: $text-color;
@@ -89,7 +78,6 @@ main img {
 }
 .social-card p {
     color: $subtext-color;
-    font-family: "myMedifows", sans-serif;
 }
 
 //contact form
@@ -105,7 +93,6 @@ main img {
 }
 .contact-form-container h2.contact-form-title {
     color: $text-color;
-    font-family: "myMedifows", sans-serif;
     font-size: 36px;
     margin-bottom: 40px;
     text-align: center;
@@ -114,7 +101,6 @@ main img {
     color: $text-color;
     font-size: 27px;
     align-self: flex-start;
-    font-family: "myMedifows", sans-serif;
 }
 .contact-form-container input,.contact-form-container textarea {
     width: 100%;
@@ -122,10 +108,9 @@ main img {
     margin: 10px 0;
     border: none;
     border-radius: 5px;
-    font-family: "MyMedifows", sans-serif;
     font-size: 18px;
 }
-.contact-form-container input [type="submit"] {
+.contact-form-container input[type="submit"] {
     background-color: $cyan;
     color: $background-color;
     font-size: 20px;
@@ -144,5 +129,4 @@ main img {
 }
 .closing h4 {
     color: white;
-    font-family: "myMedifows", sans-serif;
 }
