@@ -28,4 +28,84 @@ body {
   margin: 0;
   padding: 0;
   background-color: #0b1220;
+  color: #F2F2F2;
+  font-family: "myMedifows", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("/assets/onboarding.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 10, 25, 0.65);
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.main-content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #f8f8f8;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.main-content p {
+  font-size: 24px;
+  margin: 0 30px;
+  color: #f2b6c6;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.rotator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -56px;
+}
+
+.rotator img {
+  width: 100px;
+  height: 100px;
+}
+
+.summary-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  max-width: 600px;
+  margin: 15px 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: #f2b6c6 2px solid;
+}
+
+article h2 {
+  font-family: "myMedifows", sans-serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #f2b6c6;
+}
+
+article p {
+  font-size: 20px;
+  color: #CFCFD4;
 }/*# sourceMappingURL=onboard.css.map */

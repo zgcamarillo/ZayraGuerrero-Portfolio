@@ -1,0 +1,191 @@
+//colors
+$background-color: #0b1220;
+$background-color-secondary: #020617;
+$blush-pink: #f2b6c6;
+$dusty-rose: #d48aa2;
+$deep-navy: #0b132b;
+$soft-grey: #555;
+$background-white: #f8f8ff;
+$text-color: #F2F2F2;
+$subtext-color: #CFCFD4;
+//fonts
+@font-face {
+    font-family: "myQuilge";
+    src: url("/fonts/quilge/Quilge\ DEMO\ VERSION.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "myBestSwatch";
+    src: url("/fonts/best_swashed/BestSwashed_PERSONAL_USE_ONLY.otf") format("opentype");
+    font-style: normal;
+}
+@font-face {
+    font-family: "myClamofte";
+    src: url("/fonts/clamofte/Clamofte\ DEMO\ VERSION.ttf") format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: "myMedifows";
+    src: url(/fonts/mefidows/Mefidows\ DEMO\ VERSION.ttf) format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: "goBold";
+    src: url(/fonts/gobold/Gobold\ Extra2.otf) format("opentype");
+    font-style: normal;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px)
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+}
+#introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $background-white;
+    animation: fadeUp 0.8s ease-out; 
+    border-radius: 0 0 30px 30px;   
+}
+#introduction img {
+    width: 260px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+#introduction h2 {
+    font-family: "myMedifows", sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 36px;
+    margin: 10px 0;;
+    color: $deep-navy;
+}
+#introduction h3 {
+    font-family: "myMedifows", sans-serif;
+    font-size: 24px;
+    margin: 0;
+    color: $blush-pink;
+}
+#introduction p {
+    font-family: "myMedifows", sans-serif;
+    margin: 0 10px 20px 10px;
+    font-style: italic;
+}
+.contact-information-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contact-information-links ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+//social links icons
+.logo {
+    width: 50px;
+    filter: invert(78%) sepia(21%) saturate(534%) hue-rotate(298deg) brightness(100%) contrast(91%);
+}
+//button
+#project-button {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+#project-button button {
+    background-color: #efe8e4;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-family: "myMedifows", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 0 12px rgba(212, 138, 162, 0.4);
+}
+#project-button button a {
+    text-decoration: none;
+    color: $deep-navy;
+    font-weight: bold;
+}
+#skills {
+    margin: 20px;
+}
+#skills h2 {
+    font-family: "myMedifows", sans-serif;
+    color: $text-color;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-family: "myMedifows", sans-serif;
+}
+#skills ul li {
+    background-color: $blush-pink;
+    padding: 10px 15px;
+    border-radius: 13px;
+    font-weight: bold;
+    opacity: 0;
+    white-space: nowrap;
+}
+.work-experience-wrapper {
+    margin: 15px;
+    color: $text-color;
+    text-align: center;
+}
+.work-experience-wrapper h2 {
+    font-family: "myMedifows", sans-serif;
+    font-size: 36px;
+    margin-top: 40px;
+}
+#work-experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.work-experience-card {
+    text-align: left;
+}
+.work-experience-card h3 {
+    font-family: "myMedifows", sans-serif;
+    margin: 0;
+    font-size: 25px;
+}
+.work-experience-card h4 {
+    font-family: "myMedifows", sans-serif;
+    margin: 5px 0 0 0;
+    font-size: 20px;
+    color: $dusty-rose;
+}
+.work-experience-card h6 {
+    margin: 0;
+    color: $subtext-color;;
+}
+.date-location {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-style: italic;
+}
