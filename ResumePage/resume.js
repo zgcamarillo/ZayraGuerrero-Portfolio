@@ -6,6 +6,13 @@ const typeTextSpan = document.getElementById("type-text");
 const words = ["Developer", "Designer", "Learner", "Innovator"];
 let wordIndex = 0;
 let isDeleting = false;
+//nav
+const toggleButton = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
+
+toggleButton.addEventListener("click", () => {
+    navMenu.classList.toggle("open")
+})
 
 //type word in main
 function type() {

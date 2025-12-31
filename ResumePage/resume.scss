@@ -26,6 +26,60 @@ body {
     padding: 0;
     background-color: $background-color;
 }
+//nav bar 
+.navbar {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 999;
+    color: $text-color;
+    border-bottom: 1px solid $text-color;
+}
+.navbar .logo {
+    font-family: "myMedifows";
+    font-weight: bold;
+}
+.navbar h1 {
+    font-size: 24px;
+}
+
+.nav-toggle {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: $text-color;
+}
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: $deep-navy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding-left: 20px;
+    transform: translateX(100%);
+    transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: 998;
+}
+.nav-menu.open {
+    transform: translateX(0);
+}
+.nav-menu li a {
+    color: $text-color;
+    font-size: 22px;
+    text-decoration: none;
+}
 #introduction {
     display: flex;
     flex-direction: column;
@@ -73,7 +127,7 @@ body {
     gap: 50px;
 }
 //social links icons
-.logo {
+.social-logo {
     width: 50px;
     filter: invert(78%) sepia(21%) saturate(534%) hue-rotate(298deg) brightness(100%) contrast(91%);
 }

@@ -1,3 +1,10 @@
+const toggleButton = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
+
+toggleButton.addEventListener("click", () => {
+    navMenu.classList.toggle("open")
+})
+
 fetch("projects.json")
     .then(response => response.json())
     .then(data => {
