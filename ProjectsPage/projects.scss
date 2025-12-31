@@ -87,7 +87,7 @@ body {
 .project-card h6 {
     font-size: 20px;
     margin: 0 0 20px 0;
-    font-style: none;
+    font-style: normal;
     text-align: center;
 }
 .project-card a {
@@ -95,8 +95,10 @@ body {
     color: $subtext-color;
 }
 .project-card video {
-    width: 300px;
+    width: 375px;
     border-radius: 10px;
+    display: block;
+    margin: 20px auto;
 }
 .technologies {
     text-align: left;
@@ -125,4 +127,43 @@ body {
     font-size: 25px;
     margin: 0;
     color: $subtext-color;
+}
+@media (min-width: 600px) {
+    .navbar h1 {
+        font-size: 30px;
+    }
+    .project-card {
+        max-width: 425px;
+        display: block;
+        margin: auto;
+    }
+}
+@media (min-width: 900px) {
+    #projects-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .divider {
+        display: none;
+    }
+    .project-card:first-child {
+        border-right: 1px solid $text-color;
+        padding-right: 25px;
+    }
+}
+@media (min-width: 1400px) {
+    #projects-container {
+        justify-content: baseline;
+    }
+    .project-card {
+        border-right: 1px solid $text-color;
+        padding-right: 25px;
+        margin-top: 20px;
+    }
+    .project-card:last-child {
+        border-right: none;
+    }
 }

@@ -71,7 +71,7 @@ body {
 }
 
 .hero {
-  height: 100vh;
+  height: 90vh;
   background-image: url("/assets/onboarding.png");
   background-size: cover;
   background-position: center;
@@ -146,4 +146,53 @@ article h2 {
 article p {
   font-size: 20px;
   color: #CFCFD4;
+}
+
+@media (min-width: 600px) {
+  .navbar h1 {
+    font-size: 30px;
+  }
+  article {
+    margin: auto 40px;
+  }
+  article h2 {
+    font-size: 30px;
+  }
+  article p {
+    font-size: 25px;
+  }
+}
+@media (min-width: 900px) {
+  .main-content h2 {
+    font-size: 50px;
+  }
+  .main-content p {
+    font-size: 30px;
+  }
+  .rotator {
+    top: -90px;
+  }
+  .rotator img {
+    width: 200px;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .summary-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  article {
+    max-width: 400px;
+    border-bottom: none;
+    border-right: 1px solid #f2b6c6;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+  article:last-child {
+    border-right: none;
+  }
+  article h2 {
+    margin-top: auto;
+  }
 }/*# sourceMappingURL=onboard.css.map */

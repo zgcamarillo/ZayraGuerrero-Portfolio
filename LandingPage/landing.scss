@@ -96,7 +96,7 @@ body {
 //hero section 
 #main-section {
     position: relative;
-    height: 100svh;
+    height: 90svh;
     width: 100%;
     overflow: hidden;
     border-radius: 0 0 30px 30px;
@@ -122,6 +122,7 @@ body {
     text-align: center;
     color: $text-color;
     padding: 1rem;
+    margin: 0 30px;
 }
 .heading-text-wrapper {
     display: flex;
@@ -162,7 +163,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px 30px;
+    margin: 10px 40px;
 }
 #about-me img {
     height: 450px;
@@ -173,6 +174,7 @@ body {
     font-family: "myClamofte";
     font-size: 35px;
     margin-bottom: 10px;
+    text-align: center;
 }
 #about-me-summary {
     color: $subtext-color;
@@ -268,4 +270,61 @@ body {
 
 .logo-img {
     height: 20px;
+}
+@media (min-width: 600px) {
+    .navbar h1 {
+        font-size: 30px;
+    }
+    #about-me img {
+        width: 400px;
+        height: auto;
+    }
+    #about-me-header,
+    #biography h2 {
+        font-size: 40px;
+    }
+    #about-me-summary,
+    #my-biography-summary {
+        font-size: 30px;
+    }
+    .card {
+    flex: 0 0 300px;
+    height: 300px;
+    width: 300px;
+    }
+}
+
+@media (min-width: 900px) {
+    #main-section-article  .heading-text-wrapper{
+        font-size: 50px;
+    }
+    .subheading-wrapper h3 {
+        font-size: 70px;
+    }
+
+}
+@media (min-width: 1200px) {
+    #main-section {
+        height: 100vh;
+    }
+    .rotator {
+        top: -100px;
+    }
+    .rotator img {
+        width: 200px;
+        height: auto;
+
+    }
+    #about-me {
+        margin: auto 90px;
+    }
+    #about-me-header,
+    #biography h2 {
+        margin: 50px;
+        font-size: 70px;
+    }
+    #about-me-summary,
+    #my-biography-summary {
+        font-size: 40px;
+    }
 }
