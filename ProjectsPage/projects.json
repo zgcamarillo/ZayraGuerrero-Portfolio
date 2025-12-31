@@ -1,0 +1,26 @@
+{
+    "projects" : [
+        {
+            "title": "Flowly",
+            "link":"https://flowly-budget-tracker.vercel.app/",
+            "video":"/assets/Flowly.mp4",
+            "description":"Flowly is an interactive budgeting application that allows users to track their income, expenses, and available funds. It uses object oriented Javascript to manage the logic, SCSS for animated gradients, custom styling, and a polished UI.",
+            "technologies": "Javascript | SCSS/CSS | HTML | CSS Media Queries"
+        },
+        {
+            "title":"AIRI Glow",
+            "link":"https://main.d2ynhwn2qlqdka.amplifyapp.com/",
+            "video":"/assets/AIRIGlow.mp4",
+            "description":"AIRI Glow is a responsive e-commerce website that sells make-up products. It features a modern design, and user-friendly interface.",
+            "technologies": "Javascript | Json | CSS | HTML | AWS Amplify"
+        },
+        {
+            "title":"Grand Line Calculator",
+            "link":"https://grand-line-calculator.vercel.app/",
+            "video":"/assets/GrandCalculator.mp4",
+            "description":"This is a One piece themed responsive and interactive calculator that handles errors involving the theme. This app was created using HTML, CSS, and JS.",
+            "technologies": "Javascript | CSS | HTML | CSS Media Queries"
+        }
+        
+    ]
+}

@@ -23,4 +23,76 @@
   font-family: "goBold";
   src: url(/fonts/gobold/Gobold\ Extra2.otf) format("opentype");
   font-style: normal;
+}
+body {
+  background-color: #0b1220;
+  color: #F2F2F2;
+  align-items: center;
+  text-align: center;
+  font-family: "myMedifows";
+}
+
+.divider {
+  border-bottom: 1px solid #CFCFD4;
+  margin-top: 30px;
+}
+
+.project-card {
+  margin: 30px;
+}
+
+.project-card h2 {
+  font-style: italic;
+  font-size: 38px;
+  margin-bottom: 0;
+}
+
+.project-card h6 {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  font-style: none;
+}
+
+.project-card a {
+  text-decoration: underline;
+  color: #CFCFD4;
+}
+
+.project-card video {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.technologies {
+  text-align: left;
+}
+
+.technologies h3 {
+  font-family: "myMedifows";
+  font-size: 25px;
+  font-style: italic;
+  margin: 7px 0 0 0;
+}
+
+.technologies p {
+  margin: 0;
+  line-height: 30px;
+  font-size: 20px;
+  color: #CFCFD4;
+}
+
+.overview {
+  text-align: left;
+}
+
+.overview h3 {
+  font-size: 30px;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.overview p {
+  font-size: 25px;
+  margin: 0;
+  color: #CFCFD4;
 }/*# sourceMappingURL=projects.css.map */
