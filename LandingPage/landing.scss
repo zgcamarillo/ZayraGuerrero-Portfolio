@@ -172,8 +172,8 @@ body {
 #about-me-header {
     color: $text-color;
     font-family: "myClamofte";
-    font-size: 35px;
-    margin-bottom: 10px;
+    font-size: 27px;
+    margin: 20px 10px;
     text-align: center;
 }
 #about-me-summary {
@@ -225,7 +225,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 10px 30px;
+    margin: 10px 30px 60px 30px;
     font-family: "myClamofte";
 }
 #biography h2 {
@@ -237,19 +237,7 @@ body {
     color: $subtext-color;
     font-size: 18px;
 }
-//quote 
-.quote {
-    text-align: center;
-    font-family: "myMedifows";
-}
-.quote p {
-    color: $cyan;
-    font-size: 50px;
-}
-.quote h3 {
-    color: white;
-    font-size: 25px;
-}
+
 //footer
 footer {
     background-color: $deep-navy;
