@@ -7,6 +7,8 @@ $background-white: #f8f8ff;
 $text-color: #F2F2F2;
 $subtext-color: #CFCFD4;
 $lavender: #C7B9FF;
+$cyan: #6ee7e0;
+
 //fonts
 @font-face {
     font-family: "myMedifows";
@@ -21,7 +23,9 @@ $lavender: #C7B9FF;
 body {
     padding: 0;
     margin: 0;
+    background-color: $background-white;
 }
+
 //nav bar 
 .navbar {
     position: relative;
@@ -36,6 +40,7 @@ body {
     z-index: 999;
     color: $text-color;
     border-bottom: 1px solid $text-color;
+    background-color: $background-color;
 }
 .navbar .logo {
     font-family: "myMedifows";
@@ -75,6 +80,113 @@ body {
     color: $text-color;
     font-size: 22px;
     text-decoration: none;
+}
+//card designs
+.section-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+
+  .u-center-text .heading-secondary {
+    color: $deep-navy;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column; // stack by default
+    gap: 2rem;
+
+    .col-1-of-3 {
+      flex: 1;
+
+      .card {
+        perspective: 1500px;
+        margin: auto;
+        transform-style: preserve-3d;
+        height: 600px;
+        width: 100%;
+        position: relative;
+
+        &__side {
+          position: absolute;
+          border-radius: 1rem;
+          overflow: hidden;
+          transition: transform 0.8s ease;
+          backface-visibility: hidden;
+          box-shadow: 0 10px 30px rgba($deep-navy, 0.3);
+          inset: 0;
+
+          &--front {
+            background-color: $deep-navy;
+            color: $text-color;
+          }
+
+          &--back {
+            background-color: $lavender;
+            color: $deep-navy;
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+        }
+
+        &:hover .card__side--front {
+          transform: rotateY(-180deg);
+        }
+        &:hover .card__side--back {
+          transform: rotateY(0);
+        }
+
+        &__picture {
+          height: 50%;
+          background-size: cover;
+          background-position: center;
+          background-blend-mode: overlay;
+
+          &--1 { background-image: linear-gradient(to bottom right, rgba($cyan, 0.15), rgba($lavender, 0.15)), url('/assets/airiglow.png'); }
+          &--2 { background-image: linear-gradient(to bottom right, rgba($lavender,0.35), rgba($text-color, 0.35)), url('/assets/grandcalculator.png'); }
+          &--3 { background-image: linear-gradient(to bottom right, $cyan, $subtext-color), url('/assets/flowlycard.png'); }
+        }
+
+        &__heading {
+          text-align: center;
+          font-size: 1.5rem;
+          margin: 1rem 0;
+        }
+
+        &__details {
+          text-align: center;
+          font-size: 1rem;
+          ul {
+            list-style: none;
+            padding: 0;
+            li { margin: 0.5rem 0; }
+          }
+        }
+
+        &__cta button {
+          padding: 0.8rem 2rem;
+          background-color: $cyan;
+          border: none;
+          border-radius: 0.5rem;
+          color: $deep-navy;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: $lavender;
+          }
+        }
+      }
+    }
+  }
 }
 //footer
 footer {
@@ -131,7 +243,11 @@ footer {
    text-decoration: none;
 }
 @media (min-width: 600px) {
-
+    .row {
+        flex-direction: grid;
+        grid-template-areas: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
 @media (min-width: 900px) {
     .link-sections {
