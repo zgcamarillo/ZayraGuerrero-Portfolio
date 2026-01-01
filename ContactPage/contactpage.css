@@ -190,8 +190,9 @@ main img {
   text-align: center;
 }
 
-.closing h4 {
+.closing p {
   color: white;
+  font-size: 37px;
 }
 
 footer {
